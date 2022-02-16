@@ -1,0 +1,14 @@
+﻿@model Edu_Camp.Models.Student
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Index</h1>
+
+<form asp-controller="Student"  asp-action="AddStudent" method="post">
+   <label>Full Name</label><input type="text" id="fname" name="Name"><br>
+  <label>Department</label><input type="dept" name="Department"><br>
+   <label>Division</label><input type="text" id="lname" name="Division"><br><br>
+  <input type="submit" value="Submit">
+</form> 
