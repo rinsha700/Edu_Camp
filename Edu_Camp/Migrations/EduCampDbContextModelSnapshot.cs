@@ -21,7 +21,7 @@ namespace Edu_Camp.Migrations
 
             SqlServerModelBuilderExtensions.UseIdentityColumns(modelBuilder, 1L, 1);
 
-            modelBuilder.Entity("Edu_Camp.Models.StudentService", b =>
+            modelBuilder.Entity("Edu_Camp.Models.Student", b =>
                 {
                     b.Property<int>("RegNum")
                         .ValueGeneratedOnAdd()

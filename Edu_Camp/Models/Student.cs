@@ -4,7 +4,7 @@ namespace Edu_Camp.Models
 {
     public class Student
     {
-        [Key]
+       [Key]
         public int RegNum { get; set; }
         public string Name { get; set; }
 

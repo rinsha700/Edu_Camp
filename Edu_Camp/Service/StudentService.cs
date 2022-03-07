@@ -14,7 +14,7 @@ namespace Edu_Camp.Service
         public Student Add(Student student)
         {
            eduCampDbContext.Add(student);
-            eduCampDbContext.SaveChanges();
+            eduCampDbContext.SaveChangesAsync();
 
             return student;
         }
@@ -31,7 +31,8 @@ namespace Edu_Camp.Service
 
         public List<Student> GetAll()
         {
-            throw new NotImplementedException();
+            return eduCampDbContext.Students.ToList();
+          
         }
 
         public Student Update(int id, Student student)
